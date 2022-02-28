@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+}
+#xiaomifoot{
+    height: 150px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#foot_left,#foot_middle,#foot_right{
+    float: left;
+    height: 150px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+}
+#foot_left{
+    width: 200px;
+    padding-left: 100px;
+}
+#foot_middle{
+    width: 700px;
+    text-align:left;
+    
+}
+#foot_right{
+    width: 200px;
+}
+#xiaomifoot a{
+    text-decoration: none;
+    color: #666;
+}
+#xiaomifoot a:hover{
+    text-decoration: none;
+    color: burlywood;
+}

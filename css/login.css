@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    background-color: #F5F5F5;
+}
+ul,li{
+    margin: 0px;
+    list-style: none;
+}
+#contrainer{
+    width: 870px;
+    height: 620px;
+    background-color: white;
+    margin: 0 auto;
+}
+#top{
+    height: 190px;
+    text-align: center;
+}
+#erweima{
+    height: 40px;
+    text-align: right;
+    padding: 10px;
+}
+#logo{
+    height: 150px;
+}
+#logo span{
+    font-size: 30px;
+    color: #333;
+    font-weight: normal;
+}
+#middle{
+    height: 350px;
+    width: 360px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+#formsubmit{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+#formsubmit input{
+    width: 345px;
+    height: 48px;
+    padding-left: 15px;	
+    color: #666666;
+    border: 1px solid #e0e0e0;
+}
+#tips{
+    height: 20px;
+    margin: 0 auto;
+    color: #A9A9A9;
+    padding-top: 10px;
+}
+#tips a{
+    text-decoration: none;
+}
+#left{
+    float: left;
+}
+#right{
+    float: right;
+}
+#right a{
+    color: #666666;
+}
+.oth_type_tit{
+    border: 0px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: #b0b0b0;
+}
+#dlfs{
+    text-align: center;
+}
+#dlfs a{
+    padding-right: 20px;
+}
+#xmfoot{
+    padding-top: 20px;
+    height: 80px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin: 0 auto;
+}
+#xmfoot a{
+    text-decoration: none;
+    color: #757575;
+}
+#foot_top a:hover{
+    text-decoration: none;
+    color: #333;
+}
+#foot_top ul{
+    height: 30px;
+    color: #757575;
+}
+#foot_top li{
+    display: inline-block;
+    padding-right: 13px;
+    height: 30px;
+    line-height: 30px;
+}

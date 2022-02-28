@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>小米有品</title>
+	</head>
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		var index = 1;
+		function lbt(num) {
+			if(!isNaN(num)) {
+				clearInterval(interval);
+				index = num;
+			}
+			var lbtimg = document.getElementById("lbt");
+			lbtimg.src = "img/lbt0" + index + ".jpg"
+			var lis = document.getElementById("lbtdiv").getElementsByTagName("li");
+			for(var i = 0; i < lis.length; i++) {
+				lis[i].className = "";
+			}
+			lis[index - 1].className = "li_activity";
+			index++;
+			if(index == 8) {
+				index = 1;
+			}
+		}
+		var interval = setInterval(lbt, 3000);
+
+		function stoplbt() {
+			clearInterval(interval);
+		}
+
+		function startlbt() {
+			interval = setInterval(lbt, 3000);
+		}
+	</script>
+
+	<body>
+		<div id="contrainer">
+			<div id="xmhead">
+				<iframe src="xmhead.html" width="100%" height="50px" scrolling="no" frameborder="0"></iframe>
+			</div>
+			<div id="xmmiddle">
+				<div id="m_head">
+					<div id="mh_left">
+						<img src="img/xmyp_logo.png" width="120px" height="50px" />
+					</div>
+					<div id="mh_middle">
+						<a href="ShopList.html">限时抢购</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="ShopList.html">星品驾到</a>
+					</div>
+					<div id="mh_right">
+						<input type="text" class="mh_input" name="" id="" value="" placeholder="输入商品名称查询" />
+					</div>
+				</div>
+				<div id="m_middle">
+					<div id="m_left">
+						<ul>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="ShopList.html">有品推荐</a> /
+								<a href="ShopList.html">家用电器</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">智能家庭</a> /
+								<a href="">电视影音</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">家具家装</a> /
+								<a href="">居家餐厨</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">运动户外</a> /
+								<a href="">出行车品</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">手机电脑</a> /
+								<a href="">数码配件</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">服装配饰</a> /
+								<a href="">鞋靴箱包</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">日用文创</a> /
+								<a href="">美食酒饮</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">美妆个护</a> /
+								<a href="">医疗健康</a>
+							</li>
+							<li onmouseover="this.className='limouseover'" onmouseout="this.className='limouseout'">
+								<a href="">母婴亲子</a> /
+								<a href="">宠物生活</a>
+							</li>
+						</ul>
+					</div>
+					<div id="m_right">
+
+						<div id="lbtdiv">
+							<img src="img/lbt01.jpg" id="lbt" onmouseover="stoplbt()" onmouseout="startlbt()" />
+							<ul>
+								<li class="li_activity" onmouseover="lbt(1)" onmouseout="startlbt()"></li>
+								<li onmouseover="lbt(2)" onmouseout="startlbt()"></li>
+								<li onmouseover="lbt(3)" onmouseout="startlbt()"></li>
+								<li onmouseover="lbt(4)" onmouseout="startlbt()"></li>
+								<li onmouseover="lbt(5)" onmouseout="startlbt()"></li>
+								<li onmouseover="lbt(6)" onmouseout="startlbt()"></li>
+								<li onmouseover="lbt(7)" onmouseout="startlbt()"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="m_foot">
+					<ul>
+						<li>
+							<div>
+								<a href=""><img src="img/foot01.png" /><br/> 每日新品
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="img/foot02.png" /><br/> 小米众筹
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="img/foot03.png" /><br/> 限时抢购
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="img/foot04.png" /><br/> 热销榜单
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="img/foot05.png" /><br/> 随便逛逛
+								</a>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+			<div id="xmfoot">
+				<iframe src="xmfoot.html" width="1200px" height="150px" scrolling="no" frameborder="0"></iframe>
+			</div>
+		</div>
+
+	</body>
+
+</html>

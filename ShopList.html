@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新品推荐</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/ShopList.css">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<script language="JavaScript">
+			$(function() {
+				var plen = $(".pro-info");
+				var jianjie = $(".jianjie");
+				for(var i = 0; i < plen.length; i++) {
+					console.log(plen[i].innerHTML);
+					if(plen[i].innerHTML.length > 10) {
+						var newname = plen[i].innerHTML.substring(0, 10) + "...";
+						plen[i].innerHTML = newname;
+
+					}
+				}
+				for(var i = 0; i < jianjie.length; i++) {
+					if(jianjie[i].innerHTML.length > 16) {
+						var newjianjie = jianjie[i].innerHTML.substring(0, 16) + "...";
+						jianjie[i].innerHTML = newjianjie;
+					}
+				}
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="contrainer">
+			<div id="xmhead">
+				<iframe src="xmhead.html" width="100%" height="50px" scrolling="no" frameborder="0"></iframe>
+			</div>
+			<div id="xmmiddle">
+				<div>
+					<iframe src="xmnavbar.html" width="1300px" height="90px" scrolling="no" frameborder="0"></iframe>
+				</div>
+				<div class="container">
+					<div class="row">
+						<h3><a href="index.html">首页</a>>>新品推荐</h3>
+					</div>
+					<div id="shop" class="row">
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop01.png" class="img-thumbnail">
+								<div class="caption">
+									<a href=""><p class="pro-info" title="方太瞬吸风魔方烟灶套装JQC5+GT1BE">方太瞬吸风魔方烟灶套装JQC5+GT1BE</p></a>
+									<p class="jianjie">一键瞬吸，19m³/min*大风量，黑晶镜面外观，每日换气</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop02.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="云米互联网冰箱十字四门398L">云米互联网冰箱十字四门398L</p>
+									<p class="jianjie">486L大容量，风冷无霜，360°循环出风，智能app控制</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop03.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="咱家手持挂烫机">咱家手持挂烫机</p>
+									<p class="jianjie">挂烫、平熨二合一，即熨即穿，二次发热面板，智能蒸汽加热，一键操作，150ml水箱，轻巧便携，适应丝、纤、棉、麻等多种面料</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop04.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="云米互联网冰箱 21Face 对开门428L">云米互联网冰箱 21Face 对开门428L</p>
+									<p class="jianjie">21”大屏幕，428L大容量，AI语音控制，联动家电</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="shop" class="row">
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop06.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="卡赫玻璃清洁机WV1">卡赫玻璃清洁机WV1</p>
+									<p class="jianjie">省时更省水；去污不留痕；多种清洁；轻便快捷；可视化电量</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop05.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="西点雾式冷风扇1S">西点雾式冷风扇1S</p>
+									<p class="jianjie">智能雾化系统；广角90度摆风；4种模式8档风速；安静不扰眠；LED触摸面板</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop07.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="史密斯免更换镁棒型T2热水器">史密斯免更换镁棒型T2热水器</p>
+									<p class="jianjie">免更换镁棒，专利内胆清洁，分层加热，金硅特护系统，大屏触控</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop08.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="芬尼空气能热水器 白色 65升">芬尼空气能热水器 白色 65升</p>
+									<p class="jianjie">芬尼空气能热水器 白色 65升</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="shop" class="row">
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop09.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="米家互联网洗烘一体机1S 10kg">米家互联网洗烘一体机1S 10kg</p>
+									<p class="jianjie">支持语音控制 / 国标最高A+级洗净能力 / 21种洗烘模式 / 智能空气洗 / 烘干除菌率达99.9%+ / BLDC变频节能，1400高转速 / 一级能效</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop12.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="Aqara智能晾衣机 ZNLYJ11LM 白色">Aqara智能晾衣机 ZNLYJ11LM 白色</p>
+									<p class="jianjie">自动升降，衣杆被杆一体化，35KG承重，风干烘干，智能联动，语音控制；购买前请先咨询客服判断是否符合安装条件；安装完成后请勿在晾衣机上增加防护罩、保护套等类型的产品，以免产生安全隐患。</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop10.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="云米多功能养生电水壶">云米多功能养生电水壶</p>
+									<p class="jianjie">8大菜单，12小时预约，2小时保温，安全材质</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="thumbnail">
+								<img src="img/shop11.png" class="img-thumbnail">
+								<div class="caption">
+									<p class="pro-info" title="圈厨小方电陶炉">圈厨小方电陶炉</p>
+									<p class="jianjie">锅具通用，无高频辐射，旋钮宽幅调温，实时温度显示</p>
+									<p>
+										<a href="#" class="btn btn-success" role="button">购买</a>
+										<a href="#" class="btn btn-warning" role="button">加入购物车</a>
+										<a href="#" class="btn btn-danger" role="button">收藏</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<nav aria-label="Page navigation">
+					<ul class="pagination pagination-lg">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="xmfoot">
+				<iframe src="xmfoot.html" width="1200px" height="150px" scrolling="no" frameborder="0"></iframe>
+			</div>
+		</div>
+	</body>
+
+</html>

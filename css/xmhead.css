@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+}
+#xiaomihead{
+    width: -moz-calc();
+    height: 60px;
+    background-color: #392e2e;
+}
+#xiaomihead ul{
+    float: right;
+    height: 60px;
+    margin-right: 150px;
+}
+#xiaomihead li{
+    list-style: none;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 10px;
+    color: darkgray;
+    margin-top: -5px;
+}
+#xiaomihead a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#xiaomihead a:hover{
+    text-decoration: none;
+    color: white;
+}
